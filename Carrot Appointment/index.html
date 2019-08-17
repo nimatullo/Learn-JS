@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Oswald&display=swap" rel="stylesheet">
 
     <title>Daily Carrot</title>
 </head>
@@ -18,19 +18,16 @@
         <div class="overlay">
             <nav>
                 <ul>
-                    <li><a href="#"><img src="vectors/carrot.png" alt="Daily Carrot"></a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><button>Make an Appointment</button></li>
+                    <li><a class="nav-link" href="#"><img src="vectors/carrot.png" alt="Daily Carrot"></a></li>
+                    <li><a class="nav-link" href="#">Home</a></li>
+                    <li><a class="nav-link" href="#">About</a></li>
+                    <li><a class="nav-link" href="#">Contact</a></li>
+                    <li><button class="cta">Make an Appointment</button></li>
                 </ul>
             </nav>
 
             <div class="slogan">
                 <h1>Carrots that<br>you can <span class="green">guarantee</span>.</h1>
-            </div>
-            <div class="mouse">
-                <span></span>
             </div>
         </div>
     </div>
@@ -50,6 +47,7 @@
                 <br>
                 <br>
                 <button>Select Package</button>
+                <p class="small-text"><a href="#">Learn More <span>→</span></a></p>
             </div>
         </div>
         <div class="package-item">
@@ -64,6 +62,7 @@
                     are confident in your abilities and are able to manage that many carrots.</p>
                 <br>
                 <button>Select Package</button>
+                <p class="small-text"><a href="#">Learn More <span>→</span></a></p>
             </div>
         </div>
         <div class="package-item">
@@ -78,6 +77,7 @@
                 <br>
                 <br>
                 <button>Select Package</button>
+                <p class="small-text"><a href="#">Learn More <span>→</span></a></p>
             </div>
         </div>
     </div>
@@ -106,6 +106,47 @@
                 vehicula dapibus. Duis sit amet velit tristique, laoreet erat in. </p>
         </div>
     </div>
+
+    <footer>
+        <div class="col1">
+            <ul>
+                <li>
+                    <h2>Social</h2>
+                </li>
+                <div class="social-icons">
+                    <li><a href="#"><img src="vectors/icons/fb.png" alt=""></a></li>
+                    <li><a href="#"><img src="vectors/icons/twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="vectors/icons/linkedin.png" alt=""></a></li>
+                </div>
+            </ul>
+        </div>
+        <div class="col2">
+            <ul>
+                <li>
+                    <h2>Links</h2>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Appointments</a></li>
+            </ul>
+        </div>
+
+        <div class="col3">
+            <ul>
+                <li>
+                    <h2>Newsletter</h2>
+                </li>
+                <li>Join Our Newsletter</li>
+                <li><input type="text" name="newsletter" placeholder="Email"><button>Subscribe</button></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <!-- Scripts  -->
+
+    <script src="app.js"></script>
 </body>
 
 </html>

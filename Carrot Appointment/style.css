@@ -4,8 +4,9 @@
 }
 
 body, html {
-    font-family: 'Roboto', sans-serif;
+    font-family: sans-serif;
     scroll-behavior: smooth;
+    background: linear-gradient(to right, #fff, #f6f6f6);
 }
 
 a {
@@ -17,7 +18,7 @@ nav {
     height: 100px;
     padding-left: 10%;
     padding-right: 10%;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
 nav ul {
@@ -38,7 +39,7 @@ nav a {
     margin: 1em;
     color: white;
     font-size: 20px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 nav a:hover {
@@ -55,9 +56,9 @@ nav ul li button {
     border: none;
     height: 45px;
     width: 150px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
+    color: #1e580a;
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: capitalize;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     transition: all 0.2s ease;
@@ -88,7 +89,7 @@ nav ul li button:hover {
     display: flex;
     align-items: center;
    color: white;
-   font-family: 'Roboto Condensed';
+   font-family: 'Lexend Deca';
 }
 
 span.green {
@@ -106,12 +107,12 @@ span.green {
     align-items: center;
     text-align: center;
     padding: 5% 15% 5% 15%;
+    position: relative;
 }
 
 .packages h1{
-    font-family: 'Roboto Condensed', sans-serif;
-    text-transform: uppercase;
-    color: #fb8602;
+    font-family: 'Lexend Deca', sans-serif;
+    color: black;
 }
 
 .packages h3 {
@@ -121,7 +122,7 @@ span.green {
 
 .package-item {
     height: 500px;
-    border: 1px solid lightgrey;
+    border: 1px solid #d3d3d3;
     width: 400px;
     padding: 1%;
     display: flex;
@@ -130,6 +131,7 @@ span.green {
     align-items: stretch;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
+    position: relative;
 }
 
 .package-item button {
@@ -137,10 +139,10 @@ span.green {
     border: none;
     height: 45px;
     width: 150px;
-    color: white;
+    color: #1e580a;
     border-radius: 30px;
-    font-family: 'Roboto', sans-serif;
-    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: capitalize;
     cursor: pointer;
     transition: all 0.5s ease;
     box-shadow: 0px 8px 15px rgba(108, 255, 9, 0.2);
@@ -150,6 +152,19 @@ span.green {
     transform: translateY(-10px);
 }
 
+.small-text {
+    position: absolute;
+    bottom: 10;
+    text-align: center;
+    width: 100%;
+    transition: all 0.2 ease;
+}
+
+.small-text a:hover {
+    color: black;
+    transform: translateX(10px);
+}
+
 .about-us {
     padding-left: 15%;
     padding-right: 15%;
@@ -157,7 +172,7 @@ span.green {
     background: url('vectors/vegetables.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0px 480px;
+    background-position: 0px 200px;
     background-attachment: fixed;
     position: relative;
 }
@@ -165,7 +180,7 @@ span.green {
 .about-us h1 {
     text-align: right;
     font-size: 80px;
-    font-family: 'Roboto Condensed';
+    font-family: 'Lexend Deca';
 }
 
 .about-us p {
@@ -185,48 +200,63 @@ span.green {
     width: 500px;
 }
 
-/* Animated Scrolling */
-.mouse {
-    display: block;
-    width: 28px;
-    height: 48px;
-    border-radius: 11px 11px 15px 15px;
-    border: 3px solid #fff;
-    position: absolute;
-    left: 50%;
-    margin-left: -13px;
-    z-index: 9999;
-  }
-  
-  .mouse span {
-    display: block;
-    margin: 6px auto;
-    width: 2px;
-    height: 5px;
-    border-radius: 4px;
-    background: #fff;
-    border: 1px solid transparent;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: scroll;
-    animation-name: scroll;
-  }
-  
-  @keyframes scroll {
-    0% {
-      opacity: 1;
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0);
-      }
-    100% {
-      opacity: 0;
-      -webkit-transform: translateY(20px);
-      -ms-transform: translateY(20px);
-      transform: translateY(20px);
-      }
-  }
+footer {
+    height: 25vh;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+    color: black;
+    font-size: 24px;
+}
+
+footer ul {
+    list-style-type: none;
+    width: 300px;
+    height: 100%;
+}
+
+footer ul li h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: "Lexend Deca";
+    font-size: 30px;
+}
+
+footer ul li a {
+    color: black;
+}
+
+footer ul li a:hover {
+    text-decoration: dotted underline;
+
+}
+
+.col1 .social-icons{
+    display: flex;
+    flex-direction: row;
+}
+
+.col3 input{
+    padding: 1%;
+    width: 175px;
+    height: 50px;
+    border: none;
+    background-color: lightgray;
+    color: grey;
+
+}
+
+.col3 button {
+    width: 100px;
+    height: 50px;
+    background-color: #43c816;
+    color: #1e580a;
+    border: none;
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-left: 5px;
+}
