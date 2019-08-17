@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    padding: 1em;
+    height: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li:first-child {
+    margin-right: auto;
+}
+
+nav a {
+    margin: 1em;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #fb8602;
+}
+
+nav a > img {
+    flex: 2 0px;
+    width: 70px;
+}
+
+nav ul li button {
+    background-color: #43c816;
+    border: none;
+    height: 45px;
+    width: 150px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 15px;
+}
+
+nav ul li button:hover {
+    background-color: #37a512;
+    transform: scale(1.1);
+}
+
+.landing-page {
+    height: 100vh;
+    background: url('vectors/images/background2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.overlay {
+    height: 100vh;
+    background-color: rgba(86, 62, 26, 0.2);
+}
+
+.slogan {
+    height: 80%;
+    display: flex;
+    align-items: center;
+   color: white;
+   font-family: 'Roboto Condensed';
+}
+
+span.green {
+    color: #43c816;
+}
+
+.slogan h1 {
+    margin-left: 15%;
+    font-size: 10vh;
+}
+
+.packages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5% 15% 5% 15%;
+}
+
+.packages h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    color: #fb8602;
+}
+
+.packages h3 {
+    color: gray;
+    font-weight: lighter;
+}
+
+.package-item {
+    height: 500px;
+    border: 1px solid lightgrey;
+    width: 400px;
+    padding: 1%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: stretch;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.package-item button {
+    background-color: #43c816;
+    border: none;
+    height: 45px;
+    width: 150px;
+    color: white;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    box-shadow: 0px 8px 15px rgba(108, 255, 9, 0.2);
+}
+
+.package-item button:hover {
+    transform: translateY(-10px);
+}
+
+.about-us {
+    padding-left: 15%;
+    padding-right: 15%;
+    height: 50vh;
+    background: url('vectors/vegetables.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 480px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.about-us h1 {
+    text-align: right;
+    font-size: 80px;
+    font-family: 'Roboto Condensed';
+}
+
+.about-us p {
+    line-height: 25px;
+    text-align: justify;
+}
+
+.content {
+    width: 50%;
+    position: absolute;
+    top: 100;
+    right: 100;
+    color: white;
+}
+
+.carrot-paragraph {
+    width: 500px;
+}
+
+/* Animated Scrolling */
+.mouse {
+    display: block;
+    width: 28px;
+    height: 48px;
+    border-radius: 11px 11px 15px 15px;
+    border: 3px solid #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -13px;
+    z-index: 9999;
+  }
+  
+  .mouse span {
+    display: block;
+    margin: 6px auto;
+    width: 2px;
+    height: 5px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid transparent;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll;
+    animation-name: scroll;
+  }
+  
+  @keyframes scroll {
+    0% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+      }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+      transform: translateY(20px);
+      }
+  }
