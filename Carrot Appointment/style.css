@@ -104,8 +104,8 @@ span.green {
 
 .packages {
     display: flex;
-    justify-content: space-evenly;
-    align-items: baseline;
+    justify-content: space-around;
+    align-items: center;
     text-align: center;
     position: relative;
 }
@@ -117,14 +117,15 @@ span.green {
 
 .package-item h1{
     font-family: 'Lexend Deca', sans-serif;
-    color: #e05915;
+    color: white;
     font-size: 2em;
 }
 
 .packages h3 {
-    color: gray;
+    color:white;
     font-weight: lighter;
     font-size: 1.5em;
+    font-style: italic;
 }
 
 .headline-text {
@@ -134,10 +135,11 @@ span.green {
 }
 
 .package-item {
+    background: rgb(255,102,0);
+    background: linear-gradient(90deg, rgba(255,102,0,1) 0%, rgba(246,133,56,1) 100%);
     margin-top: 10%;
     margin-bottom: 10%;
     border: 1px solid #d3d3d3;
-    padding: 3%;
     flex-flow: column;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
@@ -149,21 +151,22 @@ span.green {
 
 .package-item p {
     line-height: 1.5em;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    color: white;
 }
 
 .package-item button {
-    background-color: #43c816;
+    background-color: white;
     border: none;
-    height: 45px;
-    width: 150px;
-    color: #1e580a;
+    height: 10%;
+    width: 40%;
+    color: #ff6600;
     border-radius: 30px;
     font-family: 'Lexend Deca', sans-serif;
     text-transform: capitalize;
     cursor: pointer;
     transition: all 0.5s ease;
-    box-shadow: 0px 8px 15px rgba(108, 255, 9, 0.2);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .package-item button:hover {
@@ -176,18 +179,17 @@ span.green {
     align-items: center;
     justify-content: space-evenly;
     height: 100%;
+    padding: 2%;
 }
 
 .small-text {
-    position: absolute;
-    bottom: 10;
     text-align: center;
     width: 100%;
     transition: all 0.2 ease;
 }
 
 .small-text a {
-    color: #1e580a;
+    color: white;
 }
 
 .small-text a:hover {
