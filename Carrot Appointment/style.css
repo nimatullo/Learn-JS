@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body, html {
@@ -103,16 +104,19 @@ span.green {
 
 .packages {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
     text-align: center;
-    padding: 5% 15% 5% 15%;
     position: relative;
 }
 
-.packages h1{
+.packages h1 {
     font-family: 'Lexend Deca', sans-serif;
     color: black;
+}
+
+.package-item h1{
+    font-family: 'Lexend Deca', sans-serif;
+    color: #e05915;
 }
 
 .packages h3 {
@@ -120,18 +124,27 @@ span.green {
     font-weight: lighter;
 }
 
+.headline-text {
+    position: absolute;
+    top: 20;
+    font-size: 40px;
+}
+
 .package-item {
-    height: 500px;
+    margin-top: 10%;
+    margin-bottom: 10%;
     border: 1px solid #d3d3d3;
-    width: 400px;
     padding: 1%;
-    display: flex;
     flex-flow: column;
-    justify-content: center;
-    align-items: stretch;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     position: relative;
+    width: 25%;
+    height: 70vh;
+}
+
+.package-item p {
+    line-height: 1.5em;
 }
 
 .package-item button {
@@ -160,19 +173,22 @@ span.green {
     transition: all 0.2 ease;
 }
 
+.small-text a {
+    color: #1e580a;
+}
+
 .small-text a:hover {
     color: black;
-    transform: translateX(10px);
 }
 
 .about-us {
     padding-left: 15%;
     padding-right: 15%;
-    height: 50vh;
+    height: 70vh;
     background: url('vectors/vegetables.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0px 200px;
+    background-position: center;
     background-attachment: fixed;
     position: relative;
 }
@@ -184,15 +200,12 @@ span.green {
 }
 
 .about-us p {
+    margin-left: 35%;
     line-height: 25px;
     text-align: justify;
 }
 
 .content {
-    width: 50%;
-    position: absolute;
-    top: 100;
-    right: 100;
     color: white;
 }
 
@@ -201,7 +214,7 @@ span.green {
 }
 
 footer {
-    height: 25vh;
+    height: 30vh;
     width: 100%;
     background: white;
     display: flex;
