@@ -105,6 +105,7 @@ span.green {
 .packages {
     display: flex;
     justify-content: space-evenly;
+    align-items: baseline;
     text-align: center;
     position: relative;
 }
@@ -117,11 +118,13 @@ span.green {
 .package-item h1{
     font-family: 'Lexend Deca', sans-serif;
     color: #e05915;
+    font-size: 2em;
 }
 
 .packages h3 {
     color: gray;
     font-weight: lighter;
+    font-size: 1.5em;
 }
 
 .headline-text {
@@ -134,17 +137,19 @@ span.green {
     margin-top: 10%;
     margin-bottom: 10%;
     border: 1px solid #d3d3d3;
-    padding: 1%;
+    padding: 3%;
     flex-flow: column;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     position: relative;
     width: 25%;
-    height: 70vh;
+    height: 55vh;
+    flex: 0 1 auto;
 }
 
 .package-item p {
     line-height: 1.5em;
+    font-size: 1.2em;
 }
 
 .package-item button {
@@ -163,6 +168,14 @@ span.green {
 
 .package-item button:hover {
     transform: translateY(-10px);
+}
+
+.package-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
 }
 
 .small-text {
@@ -191,10 +204,10 @@ span.green {
     background-position: center;
     background-attachment: fixed;
     position: relative;
+    padding: 10%;
 }
 
 .about-us h1 {
-    text-align: right;
     font-size: 80px;
     font-family: 'Lexend Deca';
 }
@@ -206,7 +219,11 @@ span.green {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
     color: white;
+    align-items: flex-end;
+    justify-content: space-evenly;
 }
 
 .carrot-paragraph {
