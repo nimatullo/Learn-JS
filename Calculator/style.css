@@ -4,7 +4,42 @@
     box-sizing: border-box;
 }
 
-.rows {
+.screen {
+    height: 100px;
+    width: 300px;
+    background-color: #d7d7d8;
+}
+
+.calc-main {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    height: 100vh;
+    padding-left: 40%;
+}
+
+.col {
+    display: flex;
+
+}
+
+.button {
+    padding: 1%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.button button {
+    width: 100%;
+    height: 100%;
+    background-color: #759cd6;
+    color: #2b4162;
+    border: none;
+}
+
+.button button:hover {
+    border: 1px solid #384E70;
+    transform: scale(1.03);
 }
