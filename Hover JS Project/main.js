@@ -19,7 +19,7 @@ function addEvents() {
   const divs = document.querySelectorAll('#colorchanger');
 
   divs.forEach((colorchanger) => {
-    colorchanger.addEventListener('mouseover' , (e) => {
+    colorchanger.addEventListener('onhold' , (e) => {
       colorchanger.style.backgroundColor = "red";
     })
   })
