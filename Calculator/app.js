@@ -1,3 +1,7 @@
+//Global
+let firstNumber;
+let secondNumber;
+
 function assignPrintEvent() {
     buttons = document.querySelectorAll('.numbers');
     textfield = document.querySelector('.screen');
@@ -10,11 +14,10 @@ function assignPrintEvent() {
 }
 
 function assignOperationEvent() {
-    let firstNumber;
     operations = document.querySelectorAll('.operation');
     operations.forEach(button => {
         button.addEventListener('click', function () {
-            firstNumber = parseInt(screenContent.textContent, 10);
+            firstNumber = parseFloat(screenContent.textContent, 10);
             operation = button.id;
             screenContent.textContent = '';
         });
@@ -24,10 +27,12 @@ function assignOperationEvent() {
 function equals() {
     equalsButton = document.querySelector('.equals');
     equalsButton.addEventListener('click', function () {
-        let secondNumber = parseInt(screenContent.textContent, 10);
+        secondNumber = parseFloat(screenContent.textContent, 10);
         console.log(operation);
         if (operation == 'add') {
             answer = firstNumber + secondNumber;
+        } else if (operation == 'subtract') {
+            answer = firstNumber - secondNumber;
         }
 
         screenContent.textContent = answer;
