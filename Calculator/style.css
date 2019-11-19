@@ -50,3 +50,11 @@
     border: 1px solid #384E70;
     transform: scale(1.03);
 }
+
+.todo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
