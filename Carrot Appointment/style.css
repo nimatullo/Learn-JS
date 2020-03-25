@@ -8,8 +8,6 @@ body, html {
     font-family: sans-serif;
     scroll-behavior: smooth;
     background: linear-gradient(to right, #fff, #f6f6f6);
-    cursor: none;
-    cursor: url('vectors/old_carrot_cursor.png'), auto;
 }
 
 a {

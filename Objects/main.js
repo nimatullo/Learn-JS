@@ -1,14 +1,27 @@
+// Objects
 function Book (title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-    this.info = function() {
-        console.log(title + " " + author +", " + pages + ", " + read);
-    };
+    return {
+        title,
+        author,
+        pages,
+        read
+    }
 }
-
-const myBook = new Book("Harry Potter", "JK ROWLING", 321, true);
-
-myBook.info();
-
+// Arrow Functions
+const getLocation = location => {
+    console.log(`I'm in ${location}.`);
+}
+getLocation("Brooklyn");
+// 'this' keyword
+const user = {
+    name: "Sherzod",
+    age: 20,
+    getName: function() {
+        console.log(`My name is ${this.name}`);
+        const fullname = () => {
+            console.log(`My name is ${this.name} and my age is ${this.age}`);
+        }
+        fullname();
+    }
+};
+user.getName();

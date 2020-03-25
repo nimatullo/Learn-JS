@@ -1,0 +1,25 @@
+{
+  "name": "learn-js",
+  "version": "1.0.0",
+  "description": "Learning Node JS",
+  "main": "Node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmvvpp123/Learn-JS.git"
+  },
+  "author": "Sherzod Nimatullo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmvvpp123/Learn-JS/issues"
+  },
+  "homepage": "https://github.com/mmvvpp123/Learn-JS#readme",
+  "dependencies": {
+    "uuid": "^3.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
